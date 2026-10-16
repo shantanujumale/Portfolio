@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Shantanu Jumale | AI & ML Engineering Student | Software & Machine Learning Developer</title>
+  <meta name="title" content="Shantanu Jumale | AI & ML Engineering Student | Software & Machine Learning Developer">
+  <meta name="description" content="Personal portfolio of Shantanu Jumale — B.Tech Artificial Intelligence & Machine Learning student at Symbiosis Institute of Technology (SIT), Nagpur. Published patent inventor, hackathon innovator, and software developer.">
+  <meta name="keywords" content="Shantanu Jumale, Portfolio, Machine Learning, AI, Software Engineer, B.Tech AIML, SIT Nagpur, Symbiosis International University, Python, Scikit-learn, Data Structures, Resume">
+  <meta name="author" content="Shantanu Jumale">
+  <meta name="theme-color" content="#101126">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shantanu Jumale | AI & ML Engineering Student & Developer">
+  <meta property="og:description" content="Explore published patent, machine learning projects, hackathons, verified certificates, and resume of Shantanu Jumale.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Shantanu Jumale | AI & ML Engineering Student & Developer">
+  <meta property="twitter:description" content="Engineering Fundamentals Into Impact-Driven AI Solutions. Explore my portfolio.">
+  <meta property="twitter:image" content="assets/images/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%237C3AED'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='50' fill='white'>S</text></svg>">
+
+  <!-- Modern Typography from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+  <!-- Ambient Dynamic Visual Layer -->
+  <div class="ambient-mesh" aria-hidden="true"></div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       MAIN PORTFOLIO FRAME (Reference 1 & 2 Rounded Central Content Panel)
+       ======================================================================== -->
+  <div class="portfolio-frame" id="portfolio-frame">
+
+  <!-- ========================================================================
+       NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-brand" aria-label="Portfolio Home">
+        <div class="nav-logo-badge">
+          <span>&lt;/&gt;</span>
+        </div>
+        <div class="nav-brand-text">
+          <span style="letter-spacing: -0.02em;">Shantanu Jumale</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#activities" class="nav-link">Hackathons & Leadership</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <!-- Sun Icon (Shown in Dark Mode) -->
+          <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (Shown in Light Mode) -->
+          <svg id="theme-icon-moon" style="display: none;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Download CTA -->
+        <a href="assets/resume.pdf" download="Shantanu_Jumale_Resume.pdf" class="btn btn-secondary btn-sm btn-resume-download" aria-label="Download Resume PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Let's Connect CTA -->
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Let's Connect</span>
+        </a>
+
+        <!-- Hamburger Menu Button -->
+        <button type="button" class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN CONTENT CONTAINER
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 1: HOMEPAGE / HERO SECTION
+         ---------------------------------------------------------------------- -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Narrative & Details -->
+          <div class="hero-content reveal-init">
+            
+            <!-- Availability Beacon -->
+            <div class="hero-status-pill">
+              <span class="status-dot-pulse" aria-hidden="true"></span>
+              <span>Open to Opportunities | B.Tech AIML (SIT Nagpur)</span>
+            </div>
+
+            <p class="hero-greeting">Hello, I am</p>
+            <h1 class="hero-name">
+              <span class="text-gradient">Shantanu Jumale</span>
+            </h1>
+
+            <p class="hero-title">
+              AI & ML Undergraduate | Software & Machine Learning Developer
+            </p>
+
+            <!-- Metadata Details -->
+            <div class="hero-metadata">
+              <div class="hero-meta-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-purple-light)" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span>B.Tech in Artificial Intelligence & Machine Learning</span>
+              </div>
+              <div class="hero-meta-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-cyan)" stroke-width="2"><path d="M3 21h18M3 7v14M21 7v14M6 21V11M18 21V11M10 21V11M14 21V11M10 7V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3"/></svg>
+                <span>Symbiosis Institute of Technology, Nagpur</span>
+              </div>
+              <div class="hero-meta-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-pink)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Nagpur, Maharashtra, India</span>
+              </div>
+            </div>
+
+            <!-- Headline Quote -->
+            <div style="margin-bottom: 16px;">
+              <h2 style="font-size: 1.4rem; font-weight: 600;" class="text-gradient-cyan">
+                “Building Real AI Systems for Social Impact — Not Academic Demos.”
+              </h2>
+            </div>
+
+            <!-- Bio Paragraph -->
+            <p class="hero-bio">
+              I am an AI & ML undergraduate at Symbiosis Institute of Technology (SIT), Nagpur. Lead inventor of a published Indian patent in ensemble diagnostic classifiers, passionate about building robust systems, mastering computational fundamentals, and applying machine learning to climate, sustainability, and healthcare challenges.
+            </p>
+
+            <!-- Call-to-Action Buttons -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="assets/resume.pdf" download="Shantanu_Jumale_Resume.pdf" class="btn btn-secondary btn-resume-download">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+              <a href="#contact" class="btn btn-accent">
+                <span>Get In Touch</span>
+              </a>
+            </div>
+
+            <!-- Social Media Channels -->
+            <div class="hero-social-links">
+              <!-- Email -->
+              <a href="mailto:jumaleshantanu@gmail.com" class="social-icon-btn" aria-label="Direct Email" title="jumaleshantanu@gmail.com">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <!-- Phone -->
+              <a href="tel:+917057724456" class="social-icon-btn" aria-label="Phone" title="+91 7057724456">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/shantanu-jumale" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <!-- GitHub -->
+              <a href="https://github.com/ShantanuJumale" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <!-- Resume View -->
+              <a href="assets/Resume.jpeg" target="_blank" class="social-icon-btn" aria-label="View Resume Image" title="View Full Resume Image">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual Representation & Orbiting Badges -->
+          <div class="hero-visual-wrapper reveal-init">
+            <div class="hero-avatar-frame">
+              <div class="hero-avatar-inner">
+                <img src="assets/images/profile.jpg" alt="Portrait of Shantanu Jumale at Symbiosis Institute of Technology, Nagpur" class="hero-avatar-img">
+              </div>
+            </div>
+
+            <!-- Floating Technology Badge 1 -->
+            <div class="floating-badge badge-pos-1">
+              <div class="badge-icon purple">📜</div>
+              <div>
+                <span style="font-size: 0.75rem; color: var(--text-dim); display: block;">Intellectual Property</span>
+                <span>Published Patent Lead</span>
+              </div>
+            </div>
+
+            <!-- Floating Technology Badge 2 -->
+            <div class="floating-badge badge-pos-2">
+              <div class="badge-icon cyan">🧠</div>
+              <div>
+                <span style="font-size: 0.75rem; color: var(--text-dim); display: block;">Specialization</span>
+                <span>AI & Machine Learning</span>
+              </div>
+            </div>
+
+            <!-- Floating Technology Badge 3 -->
+            <div class="floating-badge badge-pos-3">
+              <div class="badge-icon pink">⚡</div>
+              <div>
+                <span style="font-size: 0.75rem; color: var(--text-dim); display: block;">Core Strengths</span>
+                <span>Python & Data Structures</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Scroll Down Cue -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+          <div class="mouse-icon">
+            <div class="mouse-wheel"></div>
+          </div>
+          <span>Scroll Down</span>
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 2: ABOUT ME
+         ---------------------------------------------------------------------- -->
+    <section class="section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About <span class="text-gradient">Myself</span></h2>
+          <p class="section-desc">
+            A look into my academic journey, engineering mindset, machine learning research, and career vision.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Background -->
+          <div class="about-narrative reveal-init">
+            <p class="about-lead">
+              “I'm an AI & ML student who actually cares about building real systems, not just collecting certificates and projects for LinkedIn.”
+            </p>
+
+            <p>
+              I focus on mastering engineering fundamentals and applying machine learning to real-world problems. I'm disciplined, consistent, and serious about long-term growth in technology, especially in artificial intelligence, sustainability, healthcare, and impact-driven innovation.
+            </p>
+
+            <p>
+              Currently pursuing my B.Tech in Artificial Intelligence & Machine Learning at <strong>Symbiosis Institute of Technology (SIT), Nagpur</strong>. I am the lead inventor of an official government-published patent on an ensemble machine learning heart disease diagnostic system (achieving 86.95% verified accuracy). Beyond academic coursework, I actively participate in 36-hour hackathons (including IIIT Nagpur's Genathon 3.0 and SITNovate 2.0), lead technical projects, and contribute to student leadership.
+            </p>
+
+            <!-- Quick Identity Facts Strip -->
+            <div class="about-facts-grid">
+              <div class="fact-item">
+                <span class="fact-label">Full Name</span>
+                <span class="fact-value">Shantanu Laxman Jumale</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Degree</span>
+                <span class="fact-value">B.Tech in AIML / CSE</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">College</span>
+                <span class="fact-value">SIT Nagpur (Symbiosis International)</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Location</span>
+                <span class="fact-value">Nagpur, Maharashtra, India</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Languages</span>
+                <span class="fact-value">English, Hindi, Marathi</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Availability</span>
+                <span class="fact-value" style="color: #10B981;">Open to AI/ML & SDE Internships</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Interactive Focus Cards -->
+          <div class="focus-cards-grid reveal-init">
+            
+            <div class="glass-card focus-card">
+              <div class="focus-icon-box purple">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div>
+                <h3 class="focus-title">Published Patent Inventor</h3>
+                <p class="focus-desc">Lead inventor of Indian Patent Application No. 202621011074 A published in the Patent Office Journal (Govt. of India) for an ensemble cardiovascular risk classifier.</p>
+              </div>
+            </div>
+
+            <div class="glass-card focus-card">
+              <div class="focus-icon-box cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+              </div>
+              <div>
+                <h3 class="focus-title">Machine Learning Engineering</h3>
+                <p class="focus-desc">End-to-end data preprocessing, missing value imputation, outlier detection, feature engineering, and model optimization with Scikit-learn, Pandas, and NumPy.</p>
+              </div>
+            </div>
+
+            <div class="glass-card focus-card">
+              <div class="focus-icon-box pink">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div>
+                <h3 class="focus-title">Hackathon Competitor</h3>
+                <p class="focus-desc">Competitive participant at Genathon 3.0 (IIIT Nagpur) with Team Initial Commit, and SITNovate 2.0 (Enthusia 5.0) rapid engineering sprints.</p>
+              </div>
+            </div>
+
+            <div class="glass-card focus-card">
+              <div class="focus-icon-box cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </div>
+              <div>
+                <h3 class="focus-title">Career Ambition</h3>
+                <p class="focus-desc">Long-term vision: build impactful AI systems for climate change, sustainability, and large-scale social benefit rather than superficial demonstrations.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 3: EDUCATIONAL DETAILS
+         ---------------------------------------------------------------------- -->
+    <section class="section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <span class="section-tag">Academic Timeline</span>
+          <h2 class="section-title">Educational <span class="text-gradient">Qualifications</span></h2>
+          <p class="section-desc">
+            Formal engineering education, institution milestones, and relevant computing coursework.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Timeline Entry 1: B.Tech AIML (Current) -->
+          <div class="timeline-item reveal-init">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">B.Tech in Artificial Intelligence & Machine Learning (AIML)</h3>
+                  <p class="timeline-institution">Symbiosis Institute of Technology (SIT), Nagpur — Symbiosis International (Deemed University)</p>
+                </div>
+                <div class="timeline-badges">
+                  <span class="status-badge ongoing">
+                    <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--color-blue-light);"></span>
+                    Ongoing • Semester 5
+                  </span>
+                </div>
+              </div>
+
+              <div class="timeline-meta">
+                <span>🗓️ 2023 – 2027 (Undergraduate)</span>
+                <span>📍 Nagpur, Maharashtra</span>
+                <span>🎓 Specialization: Artificial Intelligence & Machine Learning / CSE</span>
+              </div>
+
+              <p class="timeline-details">
+                Rigorous undergraduate curriculum emphasizing machine learning theory, algorithm complexity, software engineering principles, and physical IoT systems. Lead student researcher with a published Indian patent in medical diagnostic AI and multiple hackathon presentations.
+              </p>
+
+              <div>
+                <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-bottom: 8px;">Key Relevant Coursework:</p>
+                <div class="coursework-tags">
+                  <span class="course-tag">Data Structures & Algorithms</span>
+                  <span class="course-tag">Machine Learning & Deep Learning</span>
+                  <span class="course-tag">Python for Data Science</span>
+                  <span class="course-tag">Database Management Systems (DBMS)</span>
+                  <span class="course-tag">Object-Oriented Programming (OOPS)</span>
+                  <span class="course-tag">Operating Systems Basics</span>
+                  <span class="course-tag">Web Technologies & JavaScript</span>
+                  <span class="course-tag">Linux System Administration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 2: Higher Secondary Education -->
+          <div class="timeline-item reveal-init">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">Higher Secondary Certificate (HSC / Class XII)</h3>
+                  <p class="timeline-institution">Science Stream — Maharashtra State Board</p>
+                </div>
+                <div class="timeline-badges">
+                  <span class="status-badge completed">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    Completed
+                  </span>
+                </div>
+              </div>
+
+              <div class="timeline-meta">
+                <span>🗓️ Completed</span>
+                <span>📍 Maharashtra, India</span>
+                <span>🔬 Stream: Science (Physics, Chemistry, Mathematics)</span>
+              </div>
+
+              <p class="timeline-details">
+                Graduated with distinction in senior secondary schooling, mastering core principles in advanced calculus, physics, and chemistry that formed the basis for analytical computing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 3: Secondary Schooling -->
+          <div class="timeline-item reveal-init">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">Secondary School Certificate (SSC / Class X)</h3>
+                  <p class="timeline-institution">Maharashtra State Board</p>
+                </div>
+                <div class="timeline-badges">
+                  <span class="status-badge completed">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    Completed
+                  </span>
+                </div>
+              </div>
+
+              <div class="timeline-meta">
+                <span>🗓️ Completed</span>
+                <span>📍 Maharashtra, India</span>
+                <span>📚 Curriculum: General Sciences & Mathematics</span>
+              </div>
+
+              <p class="timeline-details">
+                Completed secondary schooling with academic distinction and active participation in national athletic tournaments (Senior National Taekwondo Championship at Indira Gandhi Stadium, New Delhi).
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 4: TECHNICAL SKILLS
+         ---------------------------------------------------------------------- -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Skills & <span class="text-gradient">Proficiencies</span></h2>
+          <p class="section-desc">
+            Core technologies and toolkits I actively employ in engineering software, data pipelines, and machine learning models.
+          </p>
+        </div>
+
+        <!-- Interactive Search & Category Filter Tabs -->
+        <div style="max-width: 480px; margin: 0 auto 28px auto;" class="reveal-init">
+          <input type="text" id="skill-search-input" class="form-input" placeholder="🔍 Search any skill (e.g., Python, Scikit-learn, SQL, Git)..." aria-label="Search skills">
+        </div>
+
+        <div class="filter-tabs-container reveal-init" role="tablist" aria-label="Filter skills by domain">
+          <button type="button" class="filter-tab active" data-skill-filter="all">All Skills</button>
+          <button type="button" class="filter-tab" data-skill-filter="aiml">Data Science / ML</button>
+          <button type="button" class="filter-tab" data-skill-filter="languages">Programming Languages</button>
+          <button type="button" class="filter-tab" data-skill-filter="databases">Databases</button>
+          <button type="button" class="filter-tab" data-skill-filter="tools">Developer Tools & OS</button>
+          <button type="button" class="filter-tab" data-skill-filter="web">Web & Full-Stack</button>
+          <button type="button" class="filter-tab" data-skill-filter="soft">Core Strengths</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid reveal-init" id="skills-grid">
+          
+          <!-- Skill: Python -->
+          <div class="glass-card skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper" style="color: #3776AB;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              </div>
+              <span class="skill-level-badge level-advanced">Advanced</span>
+            </div>
+            <div>
+              <h3 class="skill-name">Python</h3>
+              <span class="skill-category-tag">Primary Language</span>
+            </div>
+            <p class="skill-description">
+              Core language for machine learning, data structures (Grade A+ certified), algorithm design, automated data pipelines, and research experimentation.
+            </p>
+          </div>
+
+          <!-- Skill: Machine Learning & Scikit-learn -->
+          <div class="glass-card skill-card" data-category="aiml">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper" style="color: #F37626;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              </div>
+              <span class="skill-level-badge level-advanced">Advanced (Patent Lead)</span>
+            </div>
+            <div>
+              <h3 class="skill-name">Scikit-learn & Machine Learning</h3>
+              <span class="skill-category-tag">AI / Machine Learning</span>
+            </div>
+            <p class="skill-description">
+              Ensemble classifiers, Random Forest, SVM, Logistic Regression, Decision Trees, KNN, GridSearchCV, cross-validation, and ROC-AUC evaluation.
+            </p>
+          </div>
+
+          <!-- Skill: Pandas & NumPy -->
+          <div class="glass-card skill-card" data-category="aiml">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper" style="color: #150458;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
+              <span class="skill-level-badge level-advanced">Advanced</span>
+            </div>
+            <div>
+              <h3 class="skill-name">Pandas, NumPy, Matplotlib & Seaborn</h3>
+              <span class="skill-category-tag">Data Science & Analytics</span>
+            </div>
+            <p class="skill-description">
+              Data cleaning, missing value handling, outlier detection, exploratory analysis (EDA), feature engineering, and statistical data visualization.
+            </p>
+          </div>
+
+          <!-- Skill: C / C++ -->
+          <div class="glass-card skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper" style="color: #00599C;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+              </div>
+              <span class="skill-level-badge level-intermediate">Intermediate</span>
+            </div>
+            <div>
+              <h3 class="skill-name">C & C++</h3>
+              <span class="skill-category-tag">Systems & Data Structures</span>
+            </div>
+            <p class="skill-description">
+              Pointers, memory management, object-oriented concepts, and computational fundamentals applied in computer science coursework.
+            </p>
+          </div>
+
+          <!-- Skill: SQL / Relational Databases -->
+          <div class="glass-card skill-card" data-category="databases">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper" style="color: #00758F;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <span class="skill-level-badge level-intermediate">Intermediate</span>
+            </div>
+            <div>
+              <h3 class="skill-name">SQL (MySQL / Database Systems)</h3>
+              <span class="skill-category-tag">Databases</span>
+            </div>
+            <p class="skill-description">
+              Relational schema design, complex joins, subqueries, database normalization, and SQL optimization with AI tools (AI For Techies certified).
+            </p>
+          </div>
+
+          <!-- Skill: Git & GitHub -->
+          <div class="glass-card skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper" style="color: #F05032;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="6" y1="9" x2="6" y2="15"/><path d="M18 15a9 9 0 0 0-9-9H6"/></svg>
+              </div>
+              <span class="skill-level-badge level-advanced">Advanced</span>
+            </div>
+            <div>
+              <h3 class="skill-name">Git & GitHub & Jupyter</h3>
+              <span class="skill-category-tag">Version Control & Tooling</span>
+            </div>
+            <p class="skill-description">
+              Version control, team branching workflows, pull requests, resolving merge conflicts, and interactive reproducibility in Jupyter Notebooks.
+            </p>
+          </div>
+
+          <!-- Skill: Linux & Red Hat Administration -->
+          <div class="glass-card skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper" style="color: #EE0000;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              </div>
+              <span class="skill-level-badge level-intermediate">40 Credit Hours Certified</span>
+            </div>
+            <div>
+              <h3 class="skill-name">Linux & Red Hat Administration (RH124)</h3>
+              <span class="skill-category-tag">Operating Systems</span>
+            </div>
+            <p class="skill-description">
+              Red Hat System Administration I (RH124 - RHA) verified: command-line management, shell scripting, process control, storage, and user permissions.
+            </p>
+          </div>
+
+          <!-- Skill: Web Development (HTML5, CSS3, JavaScript) -->
+          <div class="glass-card skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper" style="color: #F7DF1E;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3V3zm10.7 13.9c.5.8 1.2 1.4 2.2 1.4 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.8-1.6l-.6-.3c-1.8-.8-3-1.8-3-3.9 0-2 1.5-3.5 3.8-3.5 1.7 0 2.9.6 3.7 2.1l-1.9 1.2c-.4-.7-.9-1-1.7-1-.8 0-1.3.5-1.3 1.1 0 .7.5 1 1.6 1.5l.6.3c2.1.9 3.3 1.9 3.3 4.1 0 2.3-1.8 3.7-4.2 3.7-2.3 0-3.8-1.1-4.4-2.6l2-1.3zm-6.2.2c.4.6.8 1.1 1.6 1.1.7 0 1.2-.3 1.2-1.4V9.1h2.5v7.6c0 2.4-1.4 3.5-3.4 3.5-1.8 0-3-1-3.6-2.3l1.7-1.1z"/></svg>
+              </div>
+              <span class="skill-level-badge level-intermediate">Intermediate</span>
+            </div>
+            <div>
+              <h3 class="skill-name">JavaScript, HTML5 & Modern CSS</h3>
+              <span class="skill-category-tag">Web Development</span>
+            </div>
+            <p class="skill-description">
+              Semantic structure, CSS custom properties, DOM manipulation, responsive design systems, accessibility standards, and Streamlit client deployment.
+            </p>
+          </div>
+
+          <!-- Skill: Core CS Fundamentals -->
+          <div class="glass-card skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper" style="color: var(--color-cyan);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <span class="skill-level-badge level-advanced">Advanced</span>
+            </div>
+            <div>
+              <h3 class="skill-name">Core Computer Science</h3>
+              <span class="skill-category-tag">Theory & Practice</span>
+            </div>
+            <p class="skill-description">
+              Data Structures & Algorithms, Object-Oriented Programming (OOPS), Database Management Systems (DBMS), and Operating Systems fundamentals.
+            </p>
+          </div>
+
+          <!-- Skill: Core Strengths -->
+          <div class="glass-card skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper" style="color: var(--color-pink);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <span class="skill-level-badge level-advanced">Strengths</span>
+            </div>
+            <div>
+              <h3 class="skill-name">Discipline, Consistency & Fast Learner</h3>
+              <span class="skill-category-tag">Professional Strengths</span>
+            </div>
+            <p class="skill-description">
+              Rigorous logical thinking, collaborative hackathon teamwork, high adaptability to new tech stacks, and disciplined focus on building real systems.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 5: ACHIEVEMENTS & AWARDS
+         ---------------------------------------------------------------------- -->
+    <section class="section" id="achievements">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <span class="section-tag">Intellectual Property & Honors</span>
+          <h2 class="section-title">Major <span class="text-gradient">Achievements</span></h2>
+          <p class="section-desc">
+            Government patent publications, national hackathon honors, and sports merit accolades.
+          </p>
+        </div>
+
+        <div class="achievements-grid reveal-init">
+          
+          <!-- Achievement 1: Published Indian Patent -->
+          <div class="glass-card achievement-card" style="border: 1px solid rgba(124, 58, 237, 0.4); background: rgba(16, 17, 38, 0.85);">
+            <div class="achievement-icon-row">
+              <div class="trophy-badge" style="background: var(--gradient-purple-blue);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <span class="achievement-year">Published: March 20, 2026</span>
+            </div>
+            <div>
+              <div style="display: flex; gap: 8px; margin-bottom: 6px;">
+                <span class="project-status-badge" style="background: rgba(124, 58, 237, 0.25); color: #C084FC;">Govt. Patent Published</span>
+              </div>
+              <h3 class="achievement-title">Heart Disease Prediction System Using Ensemble Classifiers</h3>
+              <p class="achievement-issuer">Official Journal of the Patent Office (Govt. of India) | Issue No. 12/2026 • App No. 202621011074 A</p>
+            </div>
+            <p class="achievement-desc">
+              <strong>Lead Inventor: Shantanu Jumale</strong> with university co-inventors under Symbiosis International. Disclosed a breakthrough diagnostic system combining 5 ML algorithms with 86.95% verified accuracy and clinical deployment.
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <span class="course-tag">Lead Inventor</span>
+              <span class="course-tag">Ensemble ML</span>
+              <a href="assets/images/research paper patent 02.jpeg" target="_blank" class="course-tag" style="color: var(--color-cyan); text-decoration: underline;">View Patent Gazette</a>
+            </div>
+          </div>
+
+          <!-- Achievement 2: Genathon 3.0 at IIIT Nagpur -->
+          <div class="glass-card achievement-card">
+            <div class="achievement-icon-row">
+              <div class="trophy-badge">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <span class="achievement-year">Oct 10–11, 2025</span>
+            </div>
+            <div>
+              <h3 class="achievement-title">Genathon 3.0 at Tantrafiesta 2025 – Dark Matter Eclipse</h3>
+              <p class="achievement-issuer">Issued by: Indian Institute of Information Technology, Nagpur (IIIT Nagpur)</p>
+            </div>
+            <p class="achievement-desc">
+              Represented Symbiosis as part of <strong>Team "Initial Commit"</strong> in an intensive 36-hour national engineering hackathon sprint at IIIT Nagpur, competing on high-velocity innovation challenges.
+            </p>
+            <div>
+              <span class="course-tag">National Hackathon</span>
+              <span class="course-tag">Team Initial Commit</span>
+            </div>
+          </div>
+
+          <!-- Achievement 3: SITNovate 2.0 (Enthusia 5.0) -->
+          <div class="glass-card achievement-card">
+            <div class="achievement-icon-row">
+              <div class="trophy-badge" style="background: var(--gradient-cyan-blue);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <span class="achievement-year">Feb 26–28, 2026</span>
+            </div>
+            <div>
+              <h3 class="achievement-title">SITNovate 2.0 Innovation Hackathon & Sprint</h3>
+              <p class="achievement-issuer">Issued by: Symbiosis Institute of Technology (SIT), Nagpur</p>
+            </div>
+            <p class="achievement-desc">
+              Awarded Certificate of Appreciation for valuable contribution as Participant and Volunteer during Enthusia 5.0 annual tech festival, leading collaborative project development.
+            </p>
+            <div>
+              <span class="course-tag">Innovation Sprint</span>
+              <span class="course-tag">Team Presentation</span>
+            </div>
+          </div>
+
+          <!-- Achievement 4: National Sports Merit -->
+          <div class="glass-card achievement-card">
+            <div class="achievement-icon-row">
+              <div class="trophy-badge" style="background: var(--gradient-primary-btn);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <span class="achievement-year">May 15–19, 2024</span>
+            </div>
+            <div>
+              <h3 class="achievement-title">XXXVII Senior National Taekwondo Championship — Merit Award</h3>
+              <p class="achievement-issuer">Taekwondo Association of India (Affiliated to Taekwondo Federation of India | Recognised by Ministry of Youth Affairs and Sports, Govt. of India)</p>
+            </div>
+            <p class="achievement-desc">
+              Selected player representing Bhandara District in the 47th Senior National Taekwondo Championship & National Selection Trials at Indira Gandhi Stadium, New Delhi; team adjudicated Championship Winners.
+            </p>
+            <div>
+              <span class="course-tag">National Merit</span>
+              <span class="course-tag">National Level</span>
+              <span class="course-tag">Indira Gandhi Stadium, New Delhi</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 6: CERTIFICATES & CREDENTIALS
+         ---------------------------------------------------------------------- -->
+    <section class="section" id="certificates">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <span class="section-tag">Credentials & Verification</span>
+          <h2 class="section-title">Verified <span class="text-gradient">Certificates</span></h2>
+          <p class="section-desc">
+            Authentic industry certifications, AI/ML course credentials, and internship completions with downloadable PDFs and instant preview lightboxes.
+          </p>
+        </div>
+
+        <div class="certificates-grid reveal-init">
+          
+          <!-- Certificate 1: DSA with Python (AIPSCC) -->
+          <div class="glass-card certificate-card">
+            <div class="certificate-thumbnail-wrapper" data-cert-details="cert-1" title="Click to view full certificate">
+              <img src="assets/certificates/Certificate 01.jpeg" alt="Certificate Course in DSA with Python - Grade A+" class="certificate-img" loading="lazy">
+              <div class="certificate-overlay">
+                <button type="button" class="btn btn-primary btn-sm" data-cert-details="cert-1">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Preview</span>
+                </button>
+                <a href="assets/certificates/Certificate-01-DSA-Python.pdf" download="Shantanu_Jumale_DSA_Python_Certificate.pdf" class="btn btn-secondary btn-sm" onclick="event.stopPropagation();">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="certificate-content">
+              <div class="cert-meta-row">
+                <span style="color: var(--color-cyan); font-weight: 600;">Cert #: 2510124 (Grade A+)</span>
+                <span>Dec 2024</span>
+              </div>
+              <h3 class="cert-title">Certificate Course in DSA with Python</h3>
+              <p class="cert-issuer">All India Professional Skills Certification Council (AIPSCC) & ICE Computers</p>
+              
+              <div class="cert-skills-tags">
+                <span class="cert-tag">Data Structures</span>
+                <span class="cert-tag">Algorithms</span>
+                <span class="cert-tag">Python</span>
+                <span class="cert-tag">Grade A+</span>
+              </div>
+
+              <div style="margin-top: auto; padding-top: 12px;">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-cert-details="cert-1">
+                  View Full Credential Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 2: Infosys Springboard DSA -->
+          <div class="glass-card certificate-card">
+            <div class="certificate-thumbnail-wrapper" data-cert-details="cert-2" title="Click to view full certificate">
+              <img src="assets/certificates/certificate 03.jpeg" alt="Infosys Springboard DSA with Python" class="certificate-img" loading="lazy">
+              <div class="certificate-overlay">
+                <button type="button" class="btn btn-primary btn-sm" data-cert-details="cert-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Preview</span>
+                </button>
+                <a href="assets/certificates/Certificate-03-Infosys-DSA.pdf" download="Shantanu_Jumale_Infosys_DSA_Certificate.pdf" class="btn btn-secondary btn-sm" onclick="event.stopPropagation();">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="certificate-content">
+              <div class="cert-meta-row">
+                <span style="color: var(--color-cyan); font-weight: 600;">verify.onwingspan.com</span>
+                <span>Oct 2025</span>
+              </div>
+              <h3 class="cert-title">Data Structures & Algorithms using Python</h3>
+              <p class="cert-issuer">Infosys Springboard (Infosys Limited)</p>
+              
+              <div class="cert-skills-tags">
+                <span class="cert-tag">Python</span>
+                <span class="cert-tag">DSA Part 1</span>
+                <span class="cert-tag">Computational Logic</span>
+              </div>
+
+              <div style="margin-top: auto; padding-top: 12px;">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-cert-details="cert-2">
+                  View Full Credential Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 3: Red Hat Linux Administration -->
+          <div class="glass-card certificate-card">
+            <div class="certificate-thumbnail-wrapper" data-cert-details="cert-3" title="Click to view full certificate">
+              <img src="assets/certificates/redhat certificate 01.jpeg" alt="Red Hat System Administration I" class="certificate-img" loading="lazy">
+              <div class="certificate-overlay">
+                <button type="button" class="btn btn-primary btn-sm" data-cert-details="cert-3">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Preview</span>
+                </button>
+                <a href="assets/certificates/Certificate-RedHat-RH124.pdf" download="Shantanu_Jumale_RedHat_Certificate.pdf" class="btn btn-secondary btn-sm" onclick="event.stopPropagation();">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="certificate-content">
+              <div class="cert-meta-row">
+                <span style="color: var(--color-cyan); font-weight: 600;">40 Credit Hours • Credly</span>
+                <span>March 2026</span>
+              </div>
+              <h3 class="cert-title">Red Hat System Administration I (RH124 - RHA)</h3>
+              <p class="cert-issuer">Red Hat Global Learning Services</p>
+              
+              <div class="cert-skills-tags">
+                <span class="cert-tag">Linux OS</span>
+                <span class="cert-tag">SysAdmin</span>
+                <span class="cert-tag">Shell CLI</span>
+                <span class="cert-tag">Enterprise Linux</span>
+              </div>
+
+              <div style="margin-top: auto; padding-top: 12px;">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-cert-details="cert-3">
+                  View Full Credential Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 4: Maincrafts Technology AI/ML Internship -->
+          <div class="glass-card certificate-card">
+            <div class="certificate-thumbnail-wrapper" data-cert-details="cert-4" title="Click to view full certificate">
+              <img src="assets/certificates/maincraft certificate 01.jpeg" alt="Maincrafts AI/ML Internship Certificate" class="certificate-img" loading="lazy">
+              <div class="certificate-overlay">
+                <button type="button" class="btn btn-primary btn-sm" data-cert-details="cert-4">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Preview</span>
+                </button>
+                <a href="assets/certificates/Certificate-Maincrafts-AIML.pdf" download="Shantanu_Jumale_Maincrafts_AIML_Internship.pdf" class="btn btn-secondary btn-sm" onclick="event.stopPropagation();">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="certificate-content">
+              <div class="cert-meta-row">
+                <span style="color: var(--color-cyan); font-weight: 600;">Intern ID: MT4061</span>
+                <span>May – June 2026</span>
+              </div>
+              <h3 class="cert-title">Artificial Intelligence & Machine Learning (AI/ML) Internship</h3>
+              <p class="cert-issuer">Maincrafts Technology (Ministry of MSME, Govt. of India)</p>
+              
+              <div class="cert-skills-tags">
+                <span class="cert-tag">AI/ML</span>
+                <span class="cert-tag">Model Pipelines</span>
+                <span class="cert-tag">Industry Internship</span>
+              </div>
+
+              <div style="margin-top: auto; padding-top: 12px;">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-cert-details="cert-4">
+                  View Full Credential Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 5: SQL Using AI -->
+          <div class="glass-card certificate-card">
+            <div class="certificate-thumbnail-wrapper" data-cert-details="cert-5" title="Click to view full certificate">
+              <img src="assets/certificates/certificate 02.jpeg" alt="SQL using AI Workshop" class="certificate-img" loading="lazy">
+              <div class="certificate-overlay">
+                <button type="button" class="btn btn-primary btn-sm" data-cert-details="cert-5">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Preview</span>
+                </button>
+                <a href="assets/certificates/Certificate-02-SQL-AI.pdf" download="Shantanu_Jumale_SQL_AI_Certificate.pdf" class="btn btn-secondary btn-sm" onclick="event.stopPropagation();">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="certificate-content">
+              <div class="cert-meta-row">
+                <span style="color: var(--color-cyan); font-weight: 600;">Verified Completion</span>
+                <span>Sept 2025</span>
+              </div>
+              <h3 class="cert-title">3-Hours SQL Using AI Workshop</h3>
+              <p class="cert-issuer">AI For Techies</p>
+              
+              <div class="cert-skills-tags">
+                <span class="cert-tag">SQL</span>
+                <span class="cert-tag">AI Querying</span>
+                <span class="cert-tag">Data Analysis</span>
+              </div>
+
+              <div style="margin-top: auto; padding-top: 12px;">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-cert-details="cert-5">
+                  View Full Credential Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 6: E-Cell Bootcamp Internship -->
+          <div class="glass-card certificate-card">
+            <div class="certificate-thumbnail-wrapper" data-cert-details="cert-6" title="Click to view full certificate">
+              <img src="assets/certificates/Ecell certificate.jpeg" alt="E-Cell SIT Nagpur Leadership Bootcamp" class="certificate-img" loading="lazy">
+              <div class="certificate-overlay">
+                <button type="button" class="btn btn-primary btn-sm" data-cert-details="cert-6">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Preview</span>
+                </button>
+                <a href="assets/certificates/Certificate-ECell-SIT-Nagpur.pdf" download="Shantanu_Jumale_ECell_Certificate.pdf" class="btn btn-secondary btn-sm" onclick="event.stopPropagation();">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="certificate-content">
+              <div class="cert-meta-row">
+                <span style="color: var(--color-cyan); font-weight: 600;">1-Month Internship</span>
+                <span>June 2026</span>
+              </div>
+              <h3 class="cert-title">Leadership Entrepreneurial Bootcamp & Internship</h3>
+              <p class="cert-issuer">Entrepreneurship Cell, SIT Nagpur & D.K. Warehousing</p>
+              
+              <div class="cert-skills-tags">
+                <span class="cert-tag">Leadership</span>
+                <span class="cert-tag">Entrepreneurship</span>
+                <span class="cert-tag">Venture Pitch</span>
+              </div>
+
+              <div style="margin-top: auto; padding-top: 12px;">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-cert-details="cert-6">
+                  View Full Credential Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 7: Genathon 3.0 Hackathon -->
+          <div class="glass-card certificate-card">
+            <div class="certificate-thumbnail-wrapper" data-cert-details="hackathon-1" title="Click to view full certificate">
+              <img src="assets/Hackthon/Hackthon certificate.jpeg" alt="Genathon 3.0 IIIT Nagpur Certificate" class="certificate-img" loading="lazy">
+              <div class="certificate-overlay">
+                <button type="button" class="btn btn-primary btn-sm" data-cert-details="hackathon-1">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Preview</span>
+                </button>
+                <a href="assets/Hackthon/Certificate-Genathon-IIIT-Nagpur.pdf" download="Shantanu_Jumale_Genathon_Certificate.pdf" class="btn btn-secondary btn-sm" onclick="event.stopPropagation();">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="certificate-content">
+              <div class="cert-meta-row">
+                <span style="color: var(--color-cyan); font-weight: 600;">Team Initial Commit</span>
+                <span>Oct 2025</span>
+              </div>
+              <h3 class="cert-title">Genathon 3.0 Participation Certificate</h3>
+              <p class="cert-issuer">IIIT Nagpur (Tantrafiesta 2025)</p>
+              
+              <div class="cert-skills-tags">
+                <span class="cert-tag">National Hackathon</span>
+                <span class="cert-tag">36-Hour Sprint</span>
+                <span class="cert-tag">Rapid Build</span>
+              </div>
+
+              <div style="margin-top: auto; padding-top: 12px;">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-cert-details="hackathon-1">
+                  View Full Credential Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 8: SITNovate 2.0 Hackathon -->
+          <div class="glass-card certificate-card">
+            <div class="certificate-thumbnail-wrapper" data-cert-details="hackathon-2" title="Click to view full certificate">
+              <img src="assets/Hackthon/hackton 01.jpeg" alt="SITNovate 2.0 Certificate of Appreciation" class="certificate-img" loading="lazy">
+              <div class="certificate-overlay">
+                <button type="button" class="btn btn-primary btn-sm" data-cert-details="hackathon-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Preview</span>
+                </button>
+                <a href="assets/Hackthon/Certificate-SITNovate-SIT-Nagpur.pdf" download="Shantanu_Jumale_SITNovate_Certificate.pdf" class="btn btn-secondary btn-sm" onclick="event.stopPropagation();">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="certificate-content">
+              <div class="cert-meta-row">
+                <span style="color: var(--color-cyan); font-weight: 600;">Enthusia 5.0</span>
+                <span>Feb 2026</span>
+              </div>
+              <h3 class="cert-title">SITNovate 2.0 Certificate of Appreciation</h3>
+              <p class="cert-issuer">Symbiosis Institute of Technology, Nagpur</p>
+              
+              <div class="cert-skills-tags">
+                <span class="cert-tag">Hackathon</span>
+                <span class="cert-tag">Volunteer</span>
+                <span class="cert-tag">Participant</span>
+              </div>
+
+              <div style="margin-top: auto; padding-top: 12px;">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-cert-details="hackathon-2">
+                  View Full Credential Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 9: National Taekwondo Championship Merit -->
+          <div class="glass-card certificate-card">
+            <div class="certificate-thumbnail-wrapper" data-cert-details="cert-7" title="Click to view full certificate">
+              <span class="cert-level-badge" style="position: absolute; top: 12px; left: 12px; z-index: 3; background: linear-gradient(135deg, #F0442E, #FF7A18); color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 4px 12px rgba(240,68,46,0.45); display: flex; align-items: center; gap: 5px;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                National Level
+              </span>
+              <img src="assets/certificates/National-Taekwondo-Certificate.jpeg" alt="XXXVII Senior National Taekwondo Championship Merit Certificate" class="certificate-img" loading="lazy">
+              <div class="certificate-overlay">
+                <button type="button" class="btn btn-primary btn-sm" data-cert-details="cert-7">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Preview</span>
+                </button>
+                <a href="assets/certificates/Certificate-National-Taekwondo.pdf" download="Shantanu_Jumale_National_Taekwondo_Certificate.pdf" class="btn btn-secondary btn-sm" onclick="event.stopPropagation();">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="certificate-content">
+              <div class="cert-meta-row">
+                <span style="color: var(--color-primary-orange-red); font-weight: 700;">CF No. 12 • National Level</span>
+                <span>May 15–19, 2024</span>
+              </div>
+              <h3 class="cert-title">XXXVII Senior National Taekwondo Championship</h3>
+              <p class="cert-issuer">Taekwondo Association of India (Affiliated to Taekwondo Federation of India | Recognised by Ministry of Youth Affairs & Sports, Govt. of India)</p>
+              
+              <div class="cert-skills-tags">
+                <span class="cert-tag">National Level</span>
+                <span class="cert-tag">National Merit</span>
+                <span class="cert-tag">Indira Gandhi Stadium, New Delhi</span>
+                <span class="cert-tag">Team Championship Winners</span>
+              </div>
+
+              <div style="margin-top: auto; padding-top: 12px;">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-cert-details="cert-7">
+                  View Full Credential Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 7: RESUME SHOWCASE
+         ---------------------------------------------------------------------- -->
+    <section class="section" id="resume" style="padding-top: 10px;">
+      <div class="container">
+        <div class="glass-card" style="padding: 32px; border-radius: var(--border-radius-xl); background: linear-gradient(135deg, rgba(22, 24, 56, 0.75), rgba(16, 17, 38, 0.9)); border: 1px solid rgba(124, 58, 237, 0.35);">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <div>
+              <span class="section-tag" style="margin-bottom: 8px;">Official Document</span>
+              <h3 style="font-size: 1.8rem; margin-bottom: 8px;">Shantanu Jumale — <span class="text-gradient">Professional Resume</span></h3>
+              <p style="color: var(--text-secondary); max-width: 680px; line-height: 1.6;">
+                Complete academic background, published patent details, technical proficiencies, project milestones, and contact information organized in an authentic, high-resolution document.
+              </p>
+            </div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="assets/resume.pdf" download="Shantanu_Jumale_Resume.pdf" class="btn btn-primary btn-resume-download">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+              <a href="assets/Resume.jpeg" target="_blank" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                <span>View Full-Res Resume Image</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 8: PROJECTS SHOWCASE
+         ---------------------------------------------------------------------- -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <span class="section-tag">Featured Engineering</span>
+          <h2 class="section-title">Projects & <span class="text-gradient">Patents</span></h2>
+          <p class="section-desc">
+            Government published patent, machine learning pipelines, and predictive algorithms engineered for real-world impact.
+          </p>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="filter-tabs-container reveal-init" role="tablist" aria-label="Filter projects by domain">
+          <button type="button" class="filter-tab active" data-project-filter="all">All Projects</button>
+          <button type="button" class="filter-tab" data-project-filter="ml">Machine Learning & AI</button>
+          <button type="button" class="filter-tab" data-project-filter="data">Data Science & Analytics</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid reveal-init">
+          
+          <!-- Project 1: Heart Disease Prediction (Published Patent) -->
+          <div class="glass-card project-card" data-category="ml">
+            <div class="project-media-wrapper">
+              <img src="assets/images/research paper patent 02.jpeg" alt="Official Patent Gazette Publication - Heart Disease Prediction System" class="project-thumbnail" loading="lazy">
+              <div class="project-card-badges">
+                <span class="project-category-badge">Published Patent</span>
+                <span class="project-status-badge">Govt. Official Journal</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Heart Disease Prediction System Using Ensemble Classifiers</h3>
+              <p class="project-summary">
+                Official Patent Application No. 202621011074 A published in the Patent Office Journal (Govt. of India). Lead inventor for a clinical ensemble framework combining 5 algorithms with 86.95% verified accuracy.
+              </p>
+
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <span class="project-feature-bullet"></span>
+                  <span>Published in Patent Office Journal No. 12/2026 (Lead Inventor: Shantanu Jumale)</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="project-feature-bullet"></span>
+                  <span>Ensemble pipeline: Random Forest, SVM, Logistic Regression, Decision Tree, KNN</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="project-feature-bullet"></span>
+                  <span>Evaluates 11 patient biomarkers with interactive Streamlit clinical deployment</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Ensemble ML</span>
+                <span class="tech-tag">Random Forest (86.95%)</span>
+                <span class="tech-tag">Streamlit</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-project-details="project-1">
+                  Project Deep Dive
+                </button>
+                <a href="assets/images/research paper patent 01.jpeg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Patent Gazette Cover">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  <span>Patent Gazette</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Crop Disease Early Warning System (PBL) -->
+          <div class="glass-card project-card" data-category="ml">
+            <div class="project-media-wrapper">
+              <img src="assets/images/IOT presentation.jpeg" alt="Hardware-integrated Crop Disease Detection System Demo" class="project-thumbnail" loading="lazy">
+              <div class="project-card-badges">
+                <span class="project-category-badge">Machine Learning & IoT</span>
+                <span class="project-status-badge" style="background: rgba(34, 211, 238, 0.2); color: #67E8F9; border-color: rgba(34, 211, 238, 0.4);">Flagship PBL</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">AI-Based Early Warning System for Crop Diseases</h3>
+              <p class="project-summary">
+                Flagship Project-Based Learning (PBL) solution at SIT Nagpur. Ingests microclimate sensor metrics and plant symptom data to forecast agricultural pathogen risks before widespread blight.
+              </p>
+
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <span class="project-feature-bullet"></span>
+                  <span>End-to-end data preprocessing and risk regression pipeline</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="project-feature-bullet"></span>
+                  <span>Integrated with physical environmental sensors & microcontrollers</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="project-feature-bullet"></span>
+                  <span>Demonstrated to university faculty and technical review boards</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Data Preprocessing</span>
+                <span class="tech-tag">IoT Hardware</span>
+                <span class="tech-tag">Pandas</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-project-details="project-2">
+                  Project Deep Dive
+                </button>
+                <a href="assets/images/IOT presentation.jpeg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Demo Photo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  <span>Live Demo Photo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Student Academic Performance Prediction -->
+          <div class="glass-card project-card" data-category="data">
+            <div class="project-media-wrapper">
+              <img src="assets/images/image 5.jpeg" alt="Student Performance Analytics System Presentation" class="project-thumbnail" loading="lazy">
+              <div class="project-card-badges">
+                <span class="project-category-badge">Data Science & Analytics</span>
+                <span class="project-status-badge" style="background: rgba(168, 85, 247, 0.2); color: #C084FC; border-color: rgba(168, 85, 247, 0.4);">Completed</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Student Academic Performance Prediction System</h3>
+              <p class="project-summary">
+                Machine learning model trained on multi-attribute educational datasets. Implemented missing value handling, outlier treatment, and algorithm comparison for student success intervention.
+              </p>
+
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <span class="project-feature-bullet"></span>
+                  <span>Comprehensive exploratory data analysis and correlation mapping</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="project-feature-bullet"></span>
+                  <span>Comparative algorithm benchmarks optimizing prediction accuracy</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="project-feature-bullet"></span>
+                  <span>Outlier treatment and statistical normalization across diverse attributes</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Seaborn</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-project-details="project-3">
+                  Project Deep Dive
+                </button>
+                <a href="assets/Resume.jpeg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="Resume Overview">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+                  <span>Resume Overview</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 9: HACKATHONS, LEADERSHIP & ACTIVITIES
+         ---------------------------------------------------------------------- -->
+    <section class="section" id="activities">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <span class="section-tag">Competitive Innovation & Leadership</span>
+          <h2 class="section-title">Hackathons & <span class="text-gradient">Participation</span></h2>
+          <p class="section-desc">
+            36-hour competitive hackathon sprints, entrepreneurship bootcamps, and technical leadership initiatives.
+          </p>
+        </div>
+
+        <div class="activities-grid reveal-init">
+          
+          <div class="glass-card activity-card">
+            <div class="activity-badge-row">
+              <span class="activity-type-tag">National Hackathon</span>
+              <span class="activity-date">Oct 10–11, 2025</span>
+            </div>
+            <h3 class="activity-title">Genathon 3.0 (IIIT Nagpur)</h3>
+            <p class="activity-role">Team "Initial Commit" • Tantrafiesta 2025 – Dark Matter Eclipse</p>
+            <p class="activity-desc">
+              Competed in an intensive 36-hour continuous build marathon organized by Indian Institute of Information Technology, Nagpur. Collaborated on rapid prototyping, algorithmic optimization, and technical defense before evaluators.
+            </p>
+          </div>
+
+          <div class="glass-card activity-card">
+            <div class="activity-badge-row">
+              <span class="activity-type-tag">University Hackathon</span>
+              <span class="activity-date">Feb 26–28, 2026</span>
+            </div>
+            <h3 class="activity-title">SITNovate 2.0 (Enthusia 5.0)</h3>
+            <p class="activity-role">Participant & Volunteer • Symbiosis Institute of Technology, Nagpur</p>
+            <p class="activity-desc">
+              Spearheaded collaborative innovation sprint, contributing technical architecture and presentation leadership, earning a Certificate of Appreciation signed by Director Dr. Nitin Rakesh.
+            </p>
+          </div>
+
+          <div class="glass-card activity-card">
+            <div class="activity-badge-row">
+              <span class="activity-type-tag">Entrepreneurship Bootcamp</span>
+              <span class="activity-date">June 1–30, 2026</span>
+            </div>
+            <h3 class="activity-title">Leadership Entrepreneurial Bootcamp & Internship</h3>
+            <p class="activity-role">E-Cell SIT Nagpur & D.K. Warehousing</p>
+            <p class="activity-desc">
+              Completed a 1-month intensive venture internship organized by the Entrepreneurship Cell at Symbiosis International University. Pitched branding and business models at SIT TANK.
+            </p>
+          </div>
+
+          <div class="glass-card activity-card">
+            <div class="activity-badge-row">
+              <span class="activity-type-tag">Conference & Professional</span>
+              <span class="activity-date">2025 – 2026</span>
+            </div>
+            <h3 class="activity-title">IEEE International Conference Delegate & IoT Presenter</h3>
+            <p class="activity-role">IEEE ICSIT & Academic Symposia</p>
+            <p class="activity-desc">
+              Represented Symbiosis at the IEEE International Conference on Sustainability, Innovation & Technology (ICSIT) and demonstrated hardware-integrated IoT and machine learning prototypes.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 10: PHOTO GALLERY
+         ---------------------------------------------------------------------- -->
+    <section class="section" id="gallery">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <span class="section-tag">Moments & Milestones</span>
+          <h2 class="section-title">Academic & Tech <span class="text-gradient">Gallery</span></h2>
+          <p class="section-desc">
+            Authentic photographs from hackathons, project demonstrations, entrepreneurship showcases, and academic conferences.
+          </p>
+        </div>
+
+        <div class="gallery-grid reveal-init">
+          
+          <!-- Photo 1: SITNovate 2.0 Hackathon Team -->
+          <div class="gallery-item" data-image-src="assets/Hackthon/hackton 2.jpeg" data-caption="Shantanu Jumale with hackathon teammates holding Certificates of Appreciation at SITNovate 2.0 (Enthusia 5.0) at SIT Nagpur." data-tag="Hackathon Squad">
+            <img src="assets/Hackthon/hackton 2.jpeg" alt="Shantanu Jumale and hackathon teammates with certificates" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Hackathon Squad</span>
+              <p class="gallery-caption">SITNovate 2.0 Innovation Hackathon Team</p>
+            </div>
+          </div>
+
+          <!-- Photo 2: IoT Presentation -->
+          <div class="gallery-item" data-image-src="assets/images/IOT presentation.jpeg" data-caption="Shantanu Jumale and engineering team demonstrating hardware-integrated IoT & ML prototype with faculty mentor." data-tag="Project Demo">
+            <img src="assets/images/IOT presentation.jpeg" alt="Live IoT and ML project demonstration at engineering lab" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Project Demo</span>
+              <p class="gallery-caption">IoT & ML Hardware Prototype Demonstration</p>
+            </div>
+          </div>
+
+          <!-- Photo 3: SIT TANK E-Cell Event -->
+          <div class="gallery-item" data-image-src="assets/images/image 1.jpeg" data-caption="Shantanu Jumale at the SIT TANK Entrepreneurship Cell showcase booth at Symbiosis Institute of Technology, Nagpur." data-tag="E-Cell Event">
+            <img src="assets/images/image 1.jpeg" alt="Shantanu at SIT TANK Entrepreneurship booth" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">E-Cell Event</span>
+              <p class="gallery-caption">SIT TANK Entrepreneurial Showcase</p>
+            </div>
+          </div>
+
+          <!-- Photo 4: IEEE Conference Delegate -->
+          <div class="gallery-item" data-image-src="assets/images/image 6.jpeg" data-caption="Shantanu Jumale representing Symbiosis at the IEEE International Conference on Sustainability, Innovation & Technology (ICSIT)." data-tag="Conference Delegate">
+            <img src="assets/images/image 6.jpeg" alt="Shantanu in formal attire at IEEE ICSIT conference banner" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Conference Delegate</span>
+              <p class="gallery-caption">IEEE International Conference (ICSIT)</p>
+            </div>
+          </div>
+
+          <!-- Photo 5: Symbiosis Batch & Tech Symposium -->
+          <div class="gallery-item" data-image-src="assets/images/image 4.jpeg" data-caption="Symbiosis Institute of Technology AIML cohort and faculty during interactive academic symposium." data-tag="Campus Milestone">
+            <img src="assets/images/image 4.jpeg" alt="SIT Nagpur AIML cohort in university classroom" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Campus Milestone</span>
+              <p class="gallery-caption">SIT Nagpur AIML Engineering Batch</p>
+            </div>
+          </div>
+
+          <!-- Photo 6: E-Cell Venture Pitch -->
+          <div class="gallery-item" data-image-src="assets/images/image 5.jpeg" data-caption="Shantanu Jumale presenting venture branding ideas at the Leadership Entrepreneurial Bootcamp interactive session." data-tag="Venture Pitch">
+            <img src="assets/images/image 5.jpeg" alt="Shantanu presenting at E-Cell leadership session" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Venture Pitch</span>
+              <p class="gallery-caption">E-Cell Leadership Bootcamp Pitch</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 11: CONTACT SECTION
+         ---------------------------------------------------------------------- -->
+    <section class="section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-init">
+          <span class="section-tag">Let's Build Something Great</span>
+          <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+          <p class="section-desc">
+            Whether you are discussing AI/ML internship opportunities, evaluating my published patent research, or collaborating on engineering projects, I'd love to connect.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Direct Channels Column -->
+          <div class="contact-info-column reveal-init">
+            
+            <a href="mailto:jumaleshantanu@gmail.com" class="glass-card contact-method-card">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-method-label">Direct Email</span>
+                <p class="contact-method-value">jumaleshantanu@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="tel:+917057724456" class="glass-card contact-method-card">
+              <div class="contact-icon-box" style="color: #10B981; background: rgba(16, 185, 129, 0.12);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-method-label">Direct Phone</span>
+                <p class="contact-method-value">+91 7057724456</p>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/shantanu-jumale" target="_blank" rel="noopener noreferrer" class="glass-card contact-method-card">
+              <div class="contact-icon-box" style="color: var(--color-blue-light); background: rgba(59, 130, 246, 0.12);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <span class="contact-method-label">Professional LinkedIn</span>
+                <p class="contact-method-value">linkedin.com/in/shantanu-jumale</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/ShantanuJumale" target="_blank" rel="noopener noreferrer" class="glass-card contact-method-card">
+              <div class="contact-icon-box" style="color: var(--color-purple-light); background: rgba(124, 58, 237, 0.12);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div>
+                <span class="contact-method-label">GitHub Repositories</span>
+                <p class="contact-method-value">github.com/ShantanuJumale</p>
+              </div>
+            </a>
+
+            <div class="glass-card contact-method-card">
+              <div class="contact-icon-box" style="color: var(--color-pink); background: rgba(236, 72, 153, 0.12);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-method-label">Location / Base</span>
+                <p class="contact-method-value">Pt.07 near Union Bank, Mouda, Nagpur, Maharashtra, India</p>
+              </div>
+            </div>
+
+            <!-- Response SLA Pill -->
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--text-muted); padding: 8px 14px;">
+              <span class="status-dot-pulse" style="width: 8px; height: 8px;"></span>
+              <span>Available for Summer & Fall AI/ML & SDE Internships.</span>
+            </div>
+
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="glass-card contact-form-card reveal-init">
+            <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Send a Direct Message</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 24px;">
+              Fill out this form to prepare a direct inquiry. Form fields validate your information locally.
+            </p>
+
+            <form id="contact-form" novalidate>
+              
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name <span style="color: var(--color-pink);">*</span></label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Recruiter / Collaborator Name" required autocomplete="name">
+                <div class="form-field-error" id="form-name-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email Address <span style="color: var(--color-pink);">*</span></label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. recruiter@company.com" required autocomplete="email">
+                <div class="form-field-error" id="form-email-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject <span style="color: var(--color-pink);">*</span></label>
+                <input type="text" id="form-subject" class="form-input" placeholder="e.g. AI/ML Internship Opportunity / Collaboration" required>
+                <div class="form-field-error" id="form-subject-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Your Message <span style="color: var(--color-pink);">*</span></label>
+                <textarea id="form-message" class="form-textarea" maxlength="500" placeholder="Please describe the role, opportunity, or project details..." required></textarea>
+                <div class="char-counter" id="char-counter">0 / 500</div>
+                <div class="form-field-error" id="form-message-error"></div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span>Send Message to Shantanu</span>
+              </button>
+
+              <div class="form-status-alert" id="form-status-alert" role="alert" aria-live="polite"></div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Brand Summary Column -->
+        <div>
+          <a href="#home" class="nav-brand" style="margin-bottom: 8px;">
+            <div class="nav-logo-badge">
+              <span>&lt;/&gt;</span>
+            </div>
+            <span>Shantanu Jumale</span>
+          </a>
+          <p class="footer-brand-desc">
+            B.Tech in Artificial Intelligence & Machine Learning student at Symbiosis Institute of Technology (SIT), Nagpur. Dedicated to building impactful AI systems.
+          </p>
+          <div style="display: flex; gap: 10px; margin-top: 18px;">
+            <a href="mailto:jumaleshantanu@gmail.com" class="social-icon-btn" aria-label="Email" title="jumaleshantanu@gmail.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/shantanu-jumale" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/ShantanuJumale" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Links Column -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Shantanu</a></li>
+            <li><a href="#education" class="footer-link">Education Details</a></li>
+            <li><a href="#skills" class="footer-link">Technical Skills</a></li>
+            <li><a href="#projects" class="footer-link">Projects & Patents</a></li>
+          </ul>
+        </div>
+
+        <!-- Showcase Column -->
+        <div>
+          <h4 class="footer-col-title">Showcase</h4>
+          <ul class="footer-links-list">
+            <li><a href="#achievements" class="footer-link">Published Patent & Honors</a></li>
+            <li><a href="#certificates" class="footer-link">Verified Credentials</a></li>
+            <li><a href="#activities" class="footer-link">Hackathons & E-Cell</a></li>
+            <li><a href="#gallery" class="footer-link">Photo Gallery</a></li>
+            <li><a href="assets/Resume.jpeg" target="_blank" class="footer-link">Resume Image (High-Res)</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Access Column -->
+        <div>
+          <h4 class="footer-col-title">Quick Actions</h4>
+          <ul class="footer-links-list">
+            <li><a href="assets/resume.pdf" download="Shantanu_Jumale_Resume.pdf" class="footer-link btn-resume-download">📄 Download Resume (PDF)</a></li>
+            <li><a href="assets/images/research paper patent 01.jpeg" target="_blank" class="footer-link">📜 View Patent Gazette</a></li>
+            <li><a href="#contact" class="footer-link">💬 Let's Connect</a></li>
+            <li><a href="README.md" target="_blank" class="footer-link">📘 Documentation Guide</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Strip -->
+      <div class="footer-bottom">
+        <div>
+          © <span id="current-year"></span> <strong>Shantanu Jumale</strong>. Built with HTML5, CSS3, & Vanilla JavaScript.
+        </div>
+        <div>
+          B.Tech Artificial Intelligence & Machine Learning • Symbiosis Institute of Technology, Nagpur.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  </div><!-- /#portfolio-frame -->
+
+
+  <!-- ========================================================================
+       BACK TO TOP BUTTON WITH CIRCULAR PROGRESS
+       ======================================================================== -->
+  <a href="#home" class="back-to-top-btn" id="back-to-top" aria-label="Back to Top of Page">
+    <svg class="progress-ring" viewBox="0 0 48 48">
+      <circle class="progress-ring-circle" cx="24" cy="24" r="22"/>
+    </svg>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </a>
+
+
+  <!-- ========================================================================
+       ACCESSIBLE MODALS & LIGHTBOXES
+       ======================================================================== -->
+
+  <!-- 1. Project Deep Dive Modal -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="project-modal-title">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" aria-label="Close Project Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-content-area" id="project-modal-content">
+        <!-- Dynamically injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Certificate Lightbox Modal -->
+  <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cert-modal-title">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" aria-label="Close Certificate Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-content-area" id="cert-modal-content">
+        <!-- Dynamically injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Photo Gallery Lightbox Modal -->
+  <div class="modal-overlay" id="gallery-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Photo Gallery Lightbox">
+    <div class="modal-container lightbox-image-container">
+      <button type="button" class="modal-close-btn" aria-label="Close Gallery Lightbox">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-content-area" style="width: 100%; padding-bottom: 16px;">
+        <img id="gallery-lightbox-img" src="" alt="" class="lightbox-img">
+        <div class="lightbox-controls">
+          <button type="button" class="btn btn-secondary btn-sm" id="gallery-prev-btn" aria-label="Previous image">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            <span>Previous</span>
+          </button>
+          <span id="gallery-lightbox-counter" style="font-size: 0.9rem; font-weight: 600;"></span>
+          <button type="button" class="btn btn-secondary btn-sm" id="gallery-next-btn" aria-label="Next image">
+            <span>Next</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+        <div id="gallery-lightbox-caption" style="margin-top: 14px; text-align: center;"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       CLIENT APPLICATION SCRIPT
+       ======================================================================== -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
