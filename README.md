@@ -230,6 +230,32 @@ Before sharing your portfolio with college faculty, recruiters, or internship ma
 
 ---
 
+## 🔒 Owner Portal & Real-Time Visitor Telemetry Dashboard
+
+The portfolio comes equipped with a **Private Owner Access Portal & Telemetry Dashboard** located at the bottom of the website:
+
+### Features
+1. **Automatic Visitor Telemetry**:
+   - **IP & Geolocation**: City, Region, Country (with flag), and ISP organization (via secure, free IP geolocation).
+   - **Operating System Detection**: Windows 11/10, macOS, iOS (iPhone/iPad), Android, Linux.
+   - **Device Categorization**: Desktop, Mobile, Tablet, plus Screen Resolution.
+   - **Network Profile**: Connection type (`4G`, `5G`, `WiFi / Broadband`), downlink bandwidth speed, and latency.
+   - **Activity & Dwell Time**: Sections explored (`#certificates`, `#projects`, `#achievements`, `#resume`) and total duration.
+2. **Owner Authentication**:
+   - Master Password protected (Default: `shantanu2026`).
+   - Change master password directly within the Dashboard settings.
+   - Session persistence option ("Remember on this device").
+3. **Live Visitor Stream & Demographics**:
+   - Filterable, searchable live visitor table.
+   - Raw JSON telemetry inspector.
+   - Visual percentage charts for Operating Systems, Devices, and Top Geographies.
+4. **Push Alerts to Your Phone / Discord**:
+   - Enter your Discord Webhook URL or HTTP Webhook in **Settings** to receive instant push alerts whenever someone opens your website.
+5. **Data Export**:
+   - One-click export of visitor logs to **CSV** or **JSON**.
+
+---
+
 ## 📄 License & Credits
 
 Built with standard HTML5, CSS3, and modern JavaScript (ES6+). Feel free to adapt, customize, and deploy this portfolio for academic and professional applications!

@@ -1746,6 +1746,7 @@
           <ul class="footer-links-list">
             <li><a href="assets/resume.pdf" download="Shantanu_Jumale_Resume.pdf" class="footer-link btn-resume-download">📄 Download Resume (PDF)</a></li>
             <li><a href="assets/images/research paper patent 01.jpeg" target="_blank" class="footer-link">📜 View Patent Gazette</a></li>
+            <li><a href="#owner-portal" class="footer-link" id="owner-portal-link">🔐 Owner Portal & Visitor Analytics</a></li>
             <li><a href="#contact" class="footer-link">💬 Let's Connect</a></li>
             <li><a href="README.md" target="_blank" class="footer-link">📘 Documentation Guide</a></li>
           </ul>
@@ -1758,8 +1759,16 @@
         <div>
           © <span id="current-year"></span> <strong>Shantanu Jumale</strong>. Built with HTML5, CSS3, & Vanilla JavaScript.
         </div>
-        <div>
-          B.Tech Artificial Intelligence & Machine Learning • Symbiosis Institute of Technology, Nagpur.
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+          <span>B.Tech AI & ML • Symbiosis Institute of Technology, Nagpur.</span>
+          <button type="button" class="owner-portal-trigger" id="owner-portal-trigger" aria-label="Owner Access Portal" title="Owner Access: Visitor Telemetry & Analytics">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+            <span>Owner Portal</span>
+            <span class="owner-live-dot" title="Live Telemetry Active"></span>
+          </button>
         </div>
       </div>
 
@@ -1836,9 +1845,346 @@
 
 
   <!-- ========================================================================
-       CLIENT APPLICATION SCRIPT
+       4. OWNER PORTAL: LOGIN MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="owner-login-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="owner-login-title">
+    <div class="modal-container owner-modal-card" style="max-width: 480px;">
+      <button type="button" class="modal-close-btn owner-modal-close" aria-label="Close Owner Login Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div class="owner-lock-avatar">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <h2 id="owner-login-title" style="font-size: 1.6rem; font-weight: 800; margin-bottom: 6px;">Owner Access Portal</h2>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
+          Authenticate as portfolio owner to inspect real-time visitor telemetry, locations, OS platforms, and network speeds.
+        </p>
+      </div>
+
+      <form id="owner-login-form">
+        <div class="form-group" style="margin-bottom: 18px;">
+          <label for="owner-password-input" class="form-label" style="font-size: 0.88rem; font-weight: 600;">Master Password</label>
+          <div style="position: relative;">
+            <input type="password" id="owner-password-input" class="form-input" placeholder="Enter master password" required style="padding-right: 44px;">
+            <button type="button" id="owner-password-toggle" aria-label="Toggle password visibility" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-muted); cursor: pointer; display: flex; align-items: center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <div id="owner-login-error" style="color: var(--color-error); font-size: 0.84rem; margin-top: 6px; display: none; font-weight: 600;"></div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; font-size: 0.85rem; flex-wrap: wrap; gap: 8px;">
+          <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--text-secondary);">
+            <input type="checkbox" id="owner-remember-me" style="accent-color: var(--color-primary-orange-red);">
+            <span>Remember on this device</span>
+          </label>
+          <span style="color: var(--text-muted); font-size: 0.8rem;">Default: <code>shantanu2026</code></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 13px; font-size: 0.98rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          <span>Unlock Executive Dashboard</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       5. OWNER PORTAL: EXECUTIVE VISITOR TELEMETRY DASHBOARD
+       ======================================================================== -->
+  <div class="modal-overlay" id="owner-dashboard-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="owner-dashboard-title">
+    <div class="modal-container owner-dashboard-container">
+      <button type="button" class="modal-close-btn owner-modal-close" aria-label="Close Owner Dashboard">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <!-- Dashboard Top Header Bar -->
+      <div class="telemetry-header">
+        <div class="telemetry-title-group">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <h2 id="owner-dashboard-title" style="font-size: 1.55rem; font-weight: 800; color: var(--text-primary); margin: 0;">Visitor Intelligence Dashboard</h2>
+            <span class="telemetry-badge" style="background: rgba(16, 185, 129, 0.12); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3);">
+              <span class="owner-live-dot"></span> Live Telemetry
+            </span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.88rem; margin: 0;">Real-time visitor locations, device demographics, network connections & viewed portfolio sections.</p>
+        </div>
+
+        <div class="telemetry-controls">
+          <button type="button" class="btn btn-secondary btn-sm" id="owner-simulate-btn" title="Simulate a live visitor for testing">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Simulate Visit</span>
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm" id="owner-export-csv-btn" title="Export logs as CSV">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>CSV</span>
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm" id="owner-export-json-btn" title="Export logs as JSON">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <span>JSON</span>
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm" id="owner-refresh-btn" title="Refresh dashboard data">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            <span>Refresh</span>
+          </button>
+          <button type="button" class="btn btn-primary btn-sm" id="owner-logout-btn" style="background: var(--color-error); border-color: var(--color-error);">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            <span>Logout</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Executive Metric Summary Cards -->
+      <div class="telemetry-metrics-grid">
+        <div class="telemetry-metric-card">
+          <div class="telemetry-metric-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Total Traffic Hits</span>
+          </div>
+          <div class="telemetry-metric-val" id="metric-total-visits">0</div>
+          <div class="telemetry-metric-sub" id="metric-unique-visitors">0 unique IPs</div>
+        </div>
+
+        <div class="telemetry-metric-card">
+          <div class="telemetry-metric-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>Global Geographies</span>
+          </div>
+          <div class="telemetry-metric-val" id="metric-total-geo">0</div>
+          <div class="telemetry-metric-sub">Multi-city IP geolocation coverage</div>
+        </div>
+
+        <div class="telemetry-metric-card">
+          <div class="telemetry-metric-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>Top Operating Platform</span>
+          </div>
+          <div class="telemetry-metric-val" id="metric-top-os" style="font-size: 1.5rem;">Windows</div>
+          <div class="telemetry-metric-sub">Desktop & Mobile client mix</div>
+        </div>
+
+        <div class="telemetry-metric-card">
+          <div class="telemetry-metric-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            <span>High-Speed Connections</span>
+          </div>
+          <div class="telemetry-metric-val" id="metric-high-speed-ratio">100%</div>
+          <div class="telemetry-metric-sub">4G, 5G & Broadband network share</div>
+        </div>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="telemetry-tabs-nav">
+        <button type="button" class="telemetry-tab-btn active" data-tab="stream">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <span>Live Visitor Stream</span>
+        </button>
+        <button type="button" class="telemetry-tab-btn" data-tab="demographics">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+          <span>Device & Demographics Analytics</span>
+        </button>
+        <button type="button" class="telemetry-tab-btn" data-tab="settings">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <span>Webhook Alerts & Master Settings</span>
+        </button>
+      </div>
+
+      <!-- Tab 1: Live Visitor Stream -->
+      <div class="telemetry-tab-pane active" id="telemetry-pane-stream">
+        <div class="telemetry-filters-bar">
+          <div class="telemetry-search-box">
+            <svg class="telemetry-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="telemetry-search-input" placeholder="Search by City, Country, IP, OS, Browser...">
+          </div>
+
+          <div class="telemetry-filter-selects">
+            <select id="telemetry-filter-os" aria-label="Filter by Operating System">
+              <option value="all">All Operating Systems</option>
+              <option value="windows">Windows</option>
+              <option value="mac">macOS</option>
+              <option value="ios">iOS (iPhone/iPad)</option>
+              <option value="android">Android</option>
+              <option value="linux">Linux</option>
+            </select>
+
+            <select id="telemetry-filter-device" aria-label="Filter by Device Category">
+              <option value="all">All Devices</option>
+              <option value="desktop">Desktop</option>
+              <option value="mobile">Mobile</option>
+              <option value="tablet">Tablet</option>
+            </select>
+
+            <select id="telemetry-filter-network" aria-label="Filter by Network Type">
+              <option value="all">All Networks</option>
+              <option value="5g">5G</option>
+              <option value="4g">4G</option>
+              <option value="broadband">Broadband / WiFi</option>
+              <option value="3g">3G / Cellular</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="telemetry-table-wrapper">
+          <table class="telemetry-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Location & IP / ISP</th>
+                <th>Operating System</th>
+                <th>Device & Screen</th>
+                <th>Browser</th>
+                <th>Network Speed</th>
+                <th style="text-align: right;">Action</th>
+              </tr>
+            </thead>
+            <tbody id="telemetry-table-body">
+              <!-- Dynamically rendered by telemetry.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 2: Visual Demographics & Device Breakdown -->
+      <div class="telemetry-tab-pane" id="telemetry-pane-demographics">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+          <!-- OS Share Card -->
+          <div class="glass-card" style="padding: 24px;">
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 6px;">Operating System Share</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px;">Breakdown of desktop and mobile operating platforms among visitors.</p>
+            <div id="chart-os-bars">
+              <!-- Populated by telemetry.js -->
+            </div>
+          </div>
+
+          <!-- Device Category Share Card -->
+          <div class="glass-card" style="padding: 24px;">
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 6px;">Device Category Breakdown</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px;">Proportion of Desktop, Mobile, and Tablet visitors accessing your portfolio.</p>
+            <div id="chart-device-bars">
+              <!-- Populated by telemetry.js -->
+            </div>
+          </div>
+
+          <!-- Top Geographic Locations Card -->
+          <div class="glass-card" style="padding: 24px;">
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 6px;">Top Geographic Locations</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px;">Highest volume cities and countries viewing your portfolio credentials.</p>
+            <ul id="chart-geo-list" style="list-style: none; padding: 0; margin: 0;">
+              <!-- Populated by telemetry.js -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Webhook Alerts & Master Settings -->
+      <div class="telemetry-tab-pane" id="telemetry-pane-settings">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px;">
+          
+          <!-- Webhook Real-Time Phone Notification Setup -->
+          <div class="glass-card" style="padding: 24px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <span style="font-size: 1.5rem;">📱</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin: 0;">Real-Time Mobile / Discord Alerts</h3>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 18px; line-height: 1.5;">
+              Receive an instantaneous push alert on your phone whenever anyone opens your portfolio website with their City, OS, and Network details.
+            </p>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label for="owner-webhook-input" class="form-label" style="font-size: 0.86rem; font-weight: 600;">Discord Webhook URL or Custom HTTP Webhook</label>
+              <input type="url" id="owner-webhook-input" class="form-input" placeholder="https://discord.com/api/webhooks/..." style="font-size: 0.86rem;">
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px;">
+              <button type="button" class="btn btn-primary btn-sm" id="owner-save-webhook-btn">
+                <span>Save Webhook</span>
+              </button>
+              <button type="button" class="btn btn-secondary btn-sm" id="owner-test-webhook-btn">
+                <span>Send Test Ping</span>
+              </button>
+            </div>
+            <div id="owner-webhook-status" style="font-size: 0.84rem; font-weight: 600;"></div>
+          </div>
+
+          <!-- Master Password Management -->
+          <div class="glass-card" style="padding: 24px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <span style="font-size: 1.5rem;">🔐</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin: 0;">Change Master Password</h3>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 18px;">
+              Update your private owner portal access password.
+            </p>
+
+            <div class="form-group" style="margin-bottom: 12px;">
+              <label for="owner-current-pwd" class="form-label" style="font-size: 0.84rem; font-weight: 600;">Current Password</label>
+              <input type="password" id="owner-current-pwd" class="form-input" placeholder="Default: shantanu2026">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="owner-new-pwd" class="form-label" style="font-size: 0.84rem; font-weight: 600;">New Password</label>
+              <input type="password" id="owner-new-pwd" class="form-input" placeholder="Enter new password (min. 4 chars)">
+            </div>
+
+            <button type="button" class="btn btn-primary btn-sm" id="owner-change-pwd-btn">
+              <span>Update Password</span>
+            </button>
+            <div id="owner-change-pwd-status" style="font-size: 0.84rem; font-weight: 600; margin-top: 10px;"></div>
+          </div>
+
+          <!-- Telemetry Storage Management -->
+          <div class="glass-card" style="padding: 24px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <span style="font-size: 1.5rem;">🗑️</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin: 0;">Telemetry Storage & Logs</h3>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 18px; line-height: 1.5;">
+              Clear accumulated visitor telemetry from your browser or start fresh with a clean session log.
+            </p>
+
+            <button type="button" class="btn btn-secondary btn-sm" id="owner-clear-logs-btn" style="color: var(--color-error); border-color: rgba(239, 68, 68, 0.4);">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              <span>Reset All Logs</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       6. OWNER PORTAL: RAW TELEMETRY INSPECTOR MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="owner-raw-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Raw Visitor Telemetry">
+    <div class="modal-container" style="max-width: 680px;">
+      <button type="button" class="modal-close-btn owner-modal-close" aria-label="Close Raw Telemetry Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div style="margin-bottom: 16px;">
+        <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 4px;">Raw Visitor Telemetry</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Exact JSON payload captured on client initialization.</p>
+      </div>
+      <div style="background: #090B18; border-radius: var(--border-radius-md); padding: 16px; border: 1px solid var(--border-subtle); max-height: 480px; overflow-y: auto;">
+        <pre id="owner-raw-json" style="color: #60A5FA; font-family: monospace; font-size: 0.85rem; line-height: 1.5; margin: 0; white-space: pre-wrap;"></pre>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       CLIENT APPLICATION SCRIPTS
        ======================================================================== -->
   <script src="js/script.js"></script>
+  <script src="js/telemetry.js"></script>
 
 </body>
 </html>
